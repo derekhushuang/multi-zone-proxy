@@ -1,0 +1,24 @@
+{
+  "name": "with-zones",
+  "version": "1.0.0",
+  "scripts": {
+    "blog": "next blog -p 5000",
+    "blog-build": "next build blog",
+    "blog-start": "next start blog -p 5000",
+    "home": "next home -p 4000",
+    "home-build": "next build home",
+    "home-start": "next start home -p 4000",
+    "proxy": "micro-proxy -r rules-dev.json",
+    "build": "cd components && yarn build",
+    "dev": "concurrently 'yarn blog' 'yarn home' 'yarn proxy'"
+  },
+  "dependencies": {
+    "concurrently": "3.5.1",
+    "micro-proxy": "^1.0.0"
+  },
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "*"
+  ]
+}
