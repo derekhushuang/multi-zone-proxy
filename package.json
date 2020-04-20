@@ -2,9 +2,11 @@
   "name": "multi-zones-proxy",
   "version": "1.0.0",
   "scripts": {
-    "proxy": "micro-proxy -r rules-dev.json"
-  },
+    "start": "node server.js",
+    "proxy": "node server.js|micro-proxy -r rules-dev.json"
+    },
   "dependencies": {
+    "express": "^4.17.1",
     "micro-proxy": "^1.0.0"
   },
   "license": "MIT",
