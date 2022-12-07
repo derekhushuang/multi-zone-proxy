@@ -6,7 +6,7 @@
     "proxy": "node server.js|micro-proxy -r rules-dev.json"
     },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "micro-proxy": "^1.0.0"
   },
   "license": "MIT",
